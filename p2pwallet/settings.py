@@ -19,7 +19,8 @@ SECRET_KEY = 'w+$mxf#dx87f$*3nut6vnma*9uk6x#d_qo8@wffv^+@l$w=v'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+    
+ALLOWED_HOSTS = ['*',''.vercel.app'']
 
 PREPEND_WWW = False
 SERVER_EMAIL = 'root@localhost'
@@ -169,3 +170,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+

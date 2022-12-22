@@ -1,0 +1,20 @@
+db.sqlite3
+.vercel
+
+
+
+[15:41:51.819] Cloning github.com/Akanmu01/djangoverceldemo (Branch: main, Commit: 00a67e3)
+[15:41:52.453] Cloning completed: 633.453ms
+[15:41:52.691] Looking up build cache...
+[15:41:52.864] Build Cache not found
+[15:41:52.911] Running "vercel build"
+[15:41:53.566] Vercel CLI 28.4.4
+[15:41:53.725] WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+[15:41:53.739] > Installing Builder: @ardnt/vercel-python-wsgi
+[15:41:57.871] Starting build
+[15:41:57.873]       Build AMI version: Amazon Linux release 2 (Karoo)
+[15:41:57.873] ERROR Invalid runtime configured (python3.6). Available runtimes:
+[15:41:57.874] ERROR  - python3.9
+[15:41:57.874] ERROR See Vercel runtime documentation for more information:
+[15:41:57.874] ERROR https://github.com/vercel/vercel/blob/main/DEVELOPING_A_RUNTIME.md#lambdaruntime
+[15:41:57.931] Error: Invalid runtime configured (python3.6).
