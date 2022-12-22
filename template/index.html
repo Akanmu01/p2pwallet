@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Vue SPA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<div id="app" hx-swap="innerHTML swap:0.1s" hx-boost="true"></div>
+    <script type="module" src="/static/main.js"></script>
+    <script src="/static/script/vue.js"></script>
+    <script src="/static/script/htmx.min.js"></script>
+    <script src="/static/script/vue-router.js"></script>
+    <script src="/static/script/bootstrap.min.js"></script>
+	<script>
+		document.body.addEventListener('htmx:configRequest', (event) => {
+			event.detail.headers['X-CSRFToken'] = '{{ csrf_token }}';
+		})
+	</script>
+</body>
+</html>
