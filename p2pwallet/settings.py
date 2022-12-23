@@ -9,16 +9,12 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# COMPRESS_ROOT = os.path.join(BASE_DIR,'static')
-# COMPRESS_ENABLED = True
-# STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
+
 
 FLW_PUB_KEY =  os.getenv('FLW_PUB_KEY')
 FLW_SEC_KEY =  os.getenv('FLW_SEC_KEY')
 SECRET_KEY = os.getenv('SECRETKEY')
 DEBUG = os.getenv('DEBUG')
-
-
 
     
 ALLOWED_HOSTS = ['*']
@@ -84,7 +80,6 @@ DATABASES = {
         conn_max_age=600
     )
 }
-
 
 
 
