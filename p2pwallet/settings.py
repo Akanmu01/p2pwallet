@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'p2pwallet.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os. 'postgres://p2pwallet:YMD114tFWkAPWW07IGtBW0BNKYCtemV6@dpg-ceiq0t4gqg4dlfcmnqgg-a.oregon-postgres.render.com/p2pwallet',
+        default='postgres://p2pwallet:YMD114tFWkAPWW07IGtBW0BNKYCtemV6@dpg-ceiq0t4gqg4dlfcmnqgg-a.oregon-postgres.render.com/p2pwallet',
         conn_max_age=600
     )
 }
