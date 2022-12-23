@@ -62,7 +62,7 @@ ROOT_URLCONF = 'p2pwallet.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['template'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'p2pwallet.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='os.getenv(P2PWALLET_DATABASE)',
+        default=os.getenv('DATABASES')
         conn_max_age=600
     )
 }
