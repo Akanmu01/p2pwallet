@@ -16,12 +16,8 @@ FLW_SEC_KEY =  os.getenv('FLW_SEC_KEY')
 SECRET_KEY = os.getenv('SECRETKEY')
 DEBUG = os.getenv('DEBUG')
 
-    
-ALLOWED_HOSTS = ['*']
 
-PREPEND_WWW = False
-SERVER_EMAIL = 'root@localhost'
-DEFAULT_FROM_EMAIL = 'webmaster@localhost'
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
