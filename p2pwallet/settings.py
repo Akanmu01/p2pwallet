@@ -6,9 +6,9 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-# STATIC_DIR=os.path.join(BASE_DIR,'static')
-# STATIC_URL = '/static/'
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_DIR=os.path.join(BASE_DIR,'static')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
 FLW_PUB_KEY =  os.getenv('FLW_PUB_KEY')
