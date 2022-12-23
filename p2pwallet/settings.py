@@ -4,10 +4,6 @@ from datetime import timedelta
 import dj_database_url
 
 
-DEBUG = os.getenv('DEBUG')
-
-
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
@@ -17,14 +13,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # COMPRESS_ENABLED = True
 # STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 
-FLW_PUB_KEY =  os.getenv('FLW_PUB_KEY')#"FLWPUBK_TEST-a0666fd92afc005feb8725a5364e3157-X"
-FLW_SEC_KEY =  os.getenv('FLW_SEC_KEY')#"FLWSECK_TEST-afbb6778d2b9fc007b0ab9aa76d2b3e3-X"
+FLW_PUB_KEY =  os.getenv('FLW_PUB_KEY')
+FLW_SEC_KEY =  os.getenv('FLW_SEC_KEY')
 SECRET_KEY = os.getenv('SECRETKEY')
-#'w+$mxf#dx87f$*3nut6vnma*9uk6x#d_qo8@wffv^+@l$w=v'
+DEBUG = os.getenv('DEBUG')
 
 
-DEBUG = True
-# DEBUG = os.getenv('DEBUG')
 
     
 ALLOWED_HOSTS = ['*']
@@ -91,7 +85,6 @@ DATABASES = {
     )
 }
 
-# postgres://p2pwallet:YMD114tFWkAPWW07IGtBW0BNKYCtemV6@dpg-ceiq0t4gqg4dlfcmnqgg-a.oregon-postgres.render.com/p2pwallet
 
 
 

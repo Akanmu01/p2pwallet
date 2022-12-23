@@ -3,28 +3,17 @@ db.sqlite3
 
 
 
-[15:41:51.819] Cloning github.com/Akanmu01/djangoverceldemo (Branch: main, Commit: 00a67e3)
-[15:41:52.453] Cloning completed: 633.453ms
-[15:41:52.691] Looking up build cache...
-[15:41:52.864] Build Cache not found
-[15:41:52.911] Running "vercel build"
-[15:41:53.566] Vercel CLI 28.4.4
-[15:41:53.725] WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
-[15:41:53.739] > Installing Builder: @ardnt/vercel-python-wsgi
-[15:41:57.871] Starting build
-[15:41:57.873]       Build AMI version: Amazon Linux release 2 (Karoo)
-[15:41:57.873] ERROR Invalid runtime configured (python3.6). Available runtimes:
-[15:41:57.874] ERROR  - python3.9
-[15:41:57.874] ERROR See Vercel runtime documentation for more information:
-[15:41:57.874] ERROR https://github.com/vercel/vercel/blob/main/DEVELOPING_A_RUNTIME.md#lambdaruntime
-[15:41:57.931] Error: Invalid runtime configured (python3.6).
-
-
-
-
 git init
 git add --all
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Akanmu01/p2pwallet.git
 git push -u origin main
+
+
+
+SECRET_KEY = 'w+$mxf#dx87f$*3nut6vnma*9uk6x#d_qo8@wffv^+@l$w=v'
+P2PWALLET_DATABASE 'postgres://p2pwallet:YMD114tFWkAPWW07IGtBW0BNKYCtemV6@dpg-ceiq0t4gqg4dlfcmnqgg-a.oregon-postgres.render.com/p2pwallet'
+FLW_PUB_KEY = "FLWPUBK_TEST-a0666fd92afc005feb8725a5364e3157-X"
+FLW_SEC_KEY = "FLWSECK_TEST-afbb6778d2b9fc007b0ab9aa76d2b3e3-X"
+DEBUG = True
