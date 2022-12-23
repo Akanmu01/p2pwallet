@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'p2pwallet.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='os.getenv('P2PWALLET_DATABASE')',
+        default='os.getenv(P2PWALLET_DATABASE)',
         conn_max_age=600
     )
 }
