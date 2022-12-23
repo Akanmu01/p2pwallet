@@ -18,3 +18,13 @@ db.sqlite3
 [15:41:57.874] ERROR See Vercel runtime documentation for more information:
 [15:41:57.874] ERROR https://github.com/vercel/vercel/blob/main/DEVELOPING_A_RUNTIME.md#lambdaruntime
 [15:41:57.931] Error: Invalid runtime configured (python3.6).
+
+
+
+
+git init
+git add --all
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Akanmu01/p2pwallet.git
+git push -u origin main

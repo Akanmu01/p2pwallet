@@ -30,20 +30,14 @@ class SignUpSerializer(serializers.ModelSerializer):
     password = serializers.CharField(max_length=128, min_length=8, write_only=True)
     account_no = serializers.CharField(read_only=True)
     email = serializers.EmailField(required=True)    
-    # profile = UserSerializer()
 
     class Meta: 
         model = User
         fields = ('email', 'password', 'account_no')
         
-        # fields = ('email', 'password', 'account_no', 'profile')
 
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
-        
-        # account_no = Wallet.objects.create(owner=user, account_no=self.create_no(), profile=self.create_profile())
-        # return {'email': user.email, 'account_no': account_no,'first_name':user.first_name, 'last_name':user.last_name, **validated_data}
-        
         account_no = Wallet.objects.create(owner=user, account_no=self.create_no())
         return {'email': user.email, 'account_no': account_no}
 
@@ -55,18 +49,7 @@ class SignUpSerializer(serializers.ModelSerializer):
         except:
             return new_num
 
-
-    # def create_profile(self, validated_data):
-    #     user = User.objects.create(
-    #         email = validated_data['email'],
-    #         first_name = validated_data['first_name'],
-    #         last_name = validated_data['last_name'],
-    #     )
-    #     user.set_password(validated_data['password'])
-    #     user.save()
-    #     return user
-
-
+ 
 
 class UserLoginSerializer(serializers.Serializer):
     email = serializers.CharField(max_length=255)
